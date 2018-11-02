@@ -5,9 +5,11 @@ using UnityEngine;
 public class PlayerCollison : MonoBehaviour {
 
 	public PlayerController playerController;
+
 	private void OnCollisionEnter(Collision collisonInfo) {
 		if(collisonInfo.collider.tag == "Obstacle") {
 			playerController.enabled = false;
+			FindObjectOfType<GameManager>().gameOver();
 		}
 	}
 	// Use this for initialization

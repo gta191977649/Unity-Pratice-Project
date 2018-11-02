@@ -18,10 +18,13 @@ public class PlayerController : MonoBehaviour {
 	void FixedUpdate() {
 		rigidbody.AddForce(0,0,forwardForce* Time.deltaTime);
 		if(Input.GetKey("d")) {
-			rigidbody.AddForce(sidewaysForce * Time.deltaTime,0,0);
+			rigidbody.AddForce(sidewaysForce * Time.deltaTime,0,0,ForceMode.VelocityChange);
 		}
 		if(Input.GetKey("a")) {
-			rigidbody.AddForce(-sidewaysForce * Time.deltaTime,0,0);
+			rigidbody.AddForce(-sidewaysForce * Time.deltaTime,0,0,ForceMode.VelocityChange);
+		}
+		if(rigidbody.position.y < -1f) {
+			FindObjectOfType<GameManager>().gameOver();
 		}
 	}
 }

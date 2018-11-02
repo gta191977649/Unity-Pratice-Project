@@ -1,0 +1,25 @@
+.NET Core SDK (reflecting any global.json):
+ Version:   2.1.403
+ Commit:    04e15494b6
+
+Runtime Environment:
+ OS Name:     ubuntu
+ OS Version:  18.04
+ OS Platform: Linux
+ RID:         ubuntu.18.04-x64
+ Base Path:   /usr/share/dotnet/sdk/2.1.403/
+
+Host (useful for support):
+  Version: 2.1.5
+  Commit:  290303f510
+
+.NET Core SDKs installed:
+  2.1.403 [/usr/share/dotnet/sdk]
+
+.NET Core runtimes installed:
+  Microsoft.AspNetCore.All 2.1.5 [/usr/share/dotnet/shared/Microsoft.AspNetCore.All]
+  Microsoft.AspNetCore.App 2.1.5 [/usr/share/dotnet/shared/Microsoft.AspNetCore.App]
+  Microsoft.NETCore.App 2.1.5 [/usr/share/dotnet/shared/Microsoft.NETCore.App]
+
+To install additional .NET Core runtimes or SDKs:
+  https://aka.ms/dotnet-download
